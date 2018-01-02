@@ -42,6 +42,7 @@ sudo apt-get install ros-kinetic-move-base
 sudo apt-get install ros-kinetic-move-base-msgs
 sudo apt-get install ros-kinetic-hector-slam
 sudo apt-get install ros-kinetic-gmapping
+sduo apt-get install ros-kinetic-dwa-local-planner
 sudo apt-get install ros-kinetic-robot-upstart
 
 ./setupCatkinWorkspace.sh
@@ -52,6 +53,8 @@ cd
 git clone https://github.com/DroidAITech/xbot2 ~/catkin_ws/src/xbot2/
 git clone https://github.com/DroidAITech/xbot2_description ~/catkin_ws/src/xbot2_description/
 git clone https://github.com/robopeak/rplidar_ros.git ~/catkin_ws/src/rplidar_ros/
+sudo cp ~/catkin_ws/src/rplidar_ros/scripts/rplidar.rules /etc/udev/rules/57-rplidar.rules
+sudo service udev restart
 source ~/.bashrc
 cd ~/catkin_ws
 catkin_make

@@ -2,7 +2,7 @@
 #二、安装基础工具软件
 sudo apt-get update
 sudo apt-get install git -y
-
+sudo apt-get install ssh -y
 #四、对机器人端口进行映射
 sudo cp 58-xbot.rules /etc/udev/rules.d/
 sudo service udev restart

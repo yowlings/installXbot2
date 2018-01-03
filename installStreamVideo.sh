@@ -13,7 +13,7 @@ sudo make install
 
 echo "step3: install FFMPEG"
 cd ../ffmpeg-3.0.9/
-sudo ./configure --enable-shared --enable-pthreads --enable-gpl  --enable-avresample --enable-libx264 --enable-libtheora  --disable-yasm
+./configure --enable-shared --enable-pthreads --enable-gpl  --enable-avresample --enable-libx264 --enable-libtheora  --disable-yasm
 make
 sudo make install
 
@@ -44,6 +44,20 @@ cd ../nginx-1.12.0/
 
 make
 sudo make install
+
+sudo echo "rtmp {
+    server {
+        listen 1935;
+		application rgb{
+			live on;
+			allow all;
+		}
+		application depth{
+			live on;
+			allow all;
+		}
+    }
+}" >> /usr/local/nginx/conf/nginx.conf
 
 
 

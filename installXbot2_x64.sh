@@ -12,7 +12,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 # Installation
 sudo apt-get update
-sudo apt-get install ros-kinetic-ros-desktop-full -y
+sudo apt-get install ros-kinetic-desktop-full -y
 # Add Individual Packagejis here
 # You can install a specific ROS package (replace underscores with dashes of the package name):
 # sudo apt-get install ros-kinetic-PACKAGE
@@ -24,8 +24,7 @@ sudo apt-get install ros-kinetic-ros-desktop-full -y
 # 
 # Initialize rosdep
 sudo apt-get install python-rosdep -y
-# Certificates are messed up
-sudo c_rehash /etc/ssl/certs
+
 # Initialize rosdep
 sudo rosdep init
 # To find available packages, use:

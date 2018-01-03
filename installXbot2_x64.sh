@@ -50,9 +50,8 @@ sudo apt-get install ros-kinetic-robot-upstart -y
 
 #六、安装xbot驱动程序以及ROS驱动包
 cd 
-git clone https://github.com/DroidAITech/xbot2 ~/catkin_ws/src/xbot2/
-git clone https://github.com/DroidAITech/xbot2_description ~/catkin_ws/src/xbot2_description/
-git clone https://github.com/robopeak/rplidar_ros.git ~/catkin_ws/src/rplidar_ros/
+git clone https://github.com/DroidAITech/xbot2.git ~/catkin_ws/src/xbot2/
+git clone https://github.com/DroidAITech/rplidar_ros.git ~/catkin_ws/src/rplidar_ros/
 sudo cp ~/catkin_ws/src/rplidar_ros/scripts/rplidar.rules /etc/udev/rules.d/57-rplidar.rules
 sudo service udev restart
 source ~/.bashrc

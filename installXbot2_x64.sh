@@ -36,13 +36,15 @@ source ~/.bashrc
 # 七、安装xbot ROS驱动包依赖的软件
 sudo apt-get install python-rosinstall -y
 sudo apt-get install ros-kinetic-yocs-cmd-vel-mux -y
-sudo apt-get install ros-kinetic-controller-mannager -y
+sudo apt-get install ros-kinetic-controller-manager -y
 sudo apt-get install ros-kinetic-move-base -y
 sudo apt-get install ros-kinetic-move-base-msgs -y
 sudo apt-get install ros-kinetic-hector-slam -y
 sudo apt-get install ros-kinetic-gmapping -y
 sduo apt-get install ros-kinetic-dwa-local-planner -y
 sudo apt-get install ros-kinetic-robot-upstart -y
+sudo apt-get install ros-kinetic-ecl -y
+
 
 ./setupCatkinWorkspace.sh
 

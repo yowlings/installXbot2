@@ -1,6 +1,6 @@
 echo "step 1: install some dependencies......"
 sudo apt-get update
-sudo apt-get install build-essential git-core checkinstall texi2html libfaac-dev libtool -y
+sudo apt-get install automake vim build-essential git-core checkinstall texi2html libfaac-dev libtool -y
 sudo apt-get install libopencore-amrnb-dev libopencore-amrwb-dev libsdl1.2-dev libtheora-dev -y
 sudo apt-get install libvorbis-dev libx11-dev libxfixes-dev zlib1g-dev libgtk2.0-dev libavcodec-dev libavformat-dev  libtiff5-dev cmake libswscale-dev libjasper-dev -y
 

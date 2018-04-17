@@ -17,9 +17,9 @@
 
 > sudo adduser xbot
 >
-> sudo  chmod +w /user/sudoers
+> sudo  chmod +w /etc/sudoers
 >
-> sudo gedit /user/sudoers  #编辑中在 root    ALL=(ALL:ALL) ALL之后加入一行xbot    ALL=(ALL:ALL) ALL
+> sudo gedit /etc/sudoers  #编辑中在 root    ALL=(ALL:ALL) ALL之后加入一行xbot    ALL=(ALL:ALL) ALL
 
 重启之后运行:
 

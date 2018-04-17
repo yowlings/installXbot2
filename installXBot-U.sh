@@ -145,7 +145,7 @@ source ~/.bashrc
 sudo echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 sudo echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 sudo echo "export ROS_MASTER_URI=http://192.168.8.101:11311" >> ~/.bashrc
-sudo echo "export ROS_HOSTNAME=172.16.8.101" >> ~/.bashrc
+sudo echo "export ROS_HOSTNAME=192.168.8.101" >> ~/.bashrc
 
 source ~/.bashrc
 # catkin_make

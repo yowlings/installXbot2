@@ -25,6 +25,12 @@
 
 > sudo userdel ubuntu
 
+然后修改root密码
+
+> sudo -i
+>
+> passwd
+
 即完成系统安装
 
 ## 二 一键安装所有程序

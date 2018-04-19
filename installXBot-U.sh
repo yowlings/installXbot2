@@ -133,6 +133,7 @@ sudo apt-get install ros-kinetic-rosbridge-server -y
 git clone https://github.com/DroidAITech/xbot.git ~/catkin_ws/src/xbot/
 git clone https://github.com/DroidAITech/rplidar_ros.git ~/catkin_ws/src/rplidar_ros/
 sudo cp ~/catkin_ws/src/rplidar_ros/scripts/rplidar.rules /etc/udev/rules.d/57-rplidar.rules
+sudo cp ~/installXBot2/58-xbot.rules /etc/udev/rules.d/
 sudo service udev restart
 source ~/.bashrc
 

@@ -1,4 +1,4 @@
-# neninstallXBot-U一键安装说明
+# installXBot-U一键安装说明
 ## 一 系统安装
 
 新到的NUC主机一般都会让供货商先装上128Gb的固态硬盘和8GB的内存条，而且预装的系统为ubuntu16.04，初始用户名和密码为：
